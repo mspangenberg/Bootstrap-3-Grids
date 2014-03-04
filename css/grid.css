@@ -1,0 +1,99 @@
+body { 
+  padding-top: 70px; /* For Top Navbar */
+  padding-bottom: 70px; /* For Bottom Navbar */
+}
+
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.well {
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+  color: rgba(86,61,124,.8);
+  border-radius: 0px;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.full:hover {
+  text-decoration: none;
+}
+
+.no-style {
+  background-color: transparent;
+  border: none;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+
+
+#jumbotron-home {
+  margin-top: -20px;
+  background-color: #333;
+  background: url(../img/bg-jumbotron-home.jpg) no-repeat center center rgba(235,55,65,0.1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-jumbotron-home.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-jumbotron-home.jpg', sizingMethod='scale')";
+}
+
+#jumbotron-home-container {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.alert-panel {
+  margin-bottom: 0px;
+}
+
+.device-info {
+  text-align: center;
+  line-height: 40px;
+}
+
+#device-info-row {
+  margin-bottom: 0px;
+}

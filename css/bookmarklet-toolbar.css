@@ -1,0 +1,133 @@
+html {
+  min-height: 100%;
+}
+
+body { 
+  min-height: 100%;
+  width: 100%;
+  padding: 0px;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Bootstrap Classes
+================================================== */
+ .full-height {
+  height: 100% !important;
+ }
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.well {
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+  color: rgba(86,61,124,.8);
+  border-radius: 0px;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid rgba(86,61,124,.2);
+}
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.full:hover {
+  text-decoration: none;
+}
+
+/* Universal Classes
+================================================== */
+.no-style {
+  background-color: transparent;
+  border: none;
+}
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
+
+/* Styles
+================================================== */
+#grid-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+/*  height: 302px;*/
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#toolbar-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+  width: 100%;
+  z-index: 0;
+  background-color: rgba(86,61,124,1);
+}
+
+#contextual-info {
+  color: white;
+}
+
+/* Footer
+================================================== */
+.device-info {
+  text-align: center;
+  line-height: 40px;
+}
+#device-info-row {
+  margin-bottom: 0px;
+}
+
+.device-info-border {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}

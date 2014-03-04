@@ -1,0 +1,18 @@
+/* ----- Detect iOS and Android for Hidden and Visible Classes */
+/* ----- Used with device-detect.js ----- */
+
+.hidden-android {
+
+}
+
+.hidden-ios {
+
+}
+
+.visible-android{
+
+}
+
+.visible-ios {
+
+}
