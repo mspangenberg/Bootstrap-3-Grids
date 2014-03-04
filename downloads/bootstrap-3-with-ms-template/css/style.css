@@ -1,0 +1,130 @@
+body { 
+  padding-top: 70px; /* For Top Navbar */
+}
+
+/* Universal Classes */
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.well {
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.no-style {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  list-style: none !important;
+  text-decoration: none !important;
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+
+/* Styles Start Here */
+/* Extra small devices (phones, less than 379px) */
+/* No media query since this is the default in Bootstrap */
+
+.well {
+  min-height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333;
+}
+
+.retina-or-not {
+  background-image: url(../img/example.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/example.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/example.jpg', sizingMethod='scale')";
+}
+
+.bg-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Medium Small devices (tablets, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+  .well {
+    font-size: 24px;
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .well {
+    font-size: 36px;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .well {
+    font-size: 48px;
+  }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .well {
+    font-size: 54px;
+  }
+
+}
+
+/* Retina Assets */
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+  .retina-or-not {
+      background-image: url(../img/example@2x.jpg);
+  }
+
+}

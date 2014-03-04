@@ -1,11 +1,11 @@
 (function() {
-    var path = "http://bootstrap_3.dev/",
+    var path = "https://raw.github.com/mspangenberg/Bootstrap-3-Grids/master/",
         containerEl = document.createElement("div"),
         frameEl = document.createElement("iframe"),
         styleEl = document.createElement("link");
  
     var sanitizePostMessage = function (e) {
-        if (e.origin === "http://bootstrap_3.dev/") {
+        if (e.origin === "https://raw.github.com/mspangenberg/Bootstrap-3-Grids/master/") {
             return false;
         }
  
