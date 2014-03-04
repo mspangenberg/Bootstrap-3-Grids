@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-sm-1 hidden-xs hidden-ms">
                     <span class="glyphicon glyphicon-remove"></span>
                 </div>
 
@@ -139,19 +139,25 @@
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div class="container">
             <div class="row" id="device-info-row">
-              <div class="col-xs-8 no-style device-info">
+              <div class="col-xs-7 col-ms-7 col-sm-6 no-style device-info">
                 <div class="device-info-border text-left">
-                    <b>Current Grid: </b>
-                    <span class="visible-xs">Extra Small</span>
-                    <span class="visible-ms">Medium Small</span>
-                    <span class="visible-sm">Small</span>
-                    <span class="visible-md">Medium</span>
-                    <span class="visible-lg">Large</span>
+                    <span class="visible-xs"><b>Current Grid:</b> Extra Small</span>
+                    <span class="visible-ms"><b>Current Grid:</b> Medium Small</span>
+                    <span class="visible-sm"><b>Current Grid:</b> Small</span>
+                    <span class="visible-md"><b>Current Grid:</b> Medium</span>
+                    <span class="visible-lg"><b>Current Grid:</b> Large</span>
+                    <b>Width: </b><span class="text-left" id="output-31"></span>px
                 </div>
               </div>
-              <div class="col-xs-4 no-style device-info">
+              <div class="hidden-xs hidden-ms col-sm-2 no-style device-info">
+                <div class="device-info-border text-left" id="show-hide-grid-off">
+                  <span><b>Grids:</b> <br />Off</span>
+                </div>
+              </div>
+              <div class="col-xs-5 col-ms-5 col-sm-4 no-style device-info">
                 <div class="device-info-border text-left">
-                    <b>Width: </b><br /><span class="text-left" id="output-31"></span>px
+                    <b>New Window:</b><br />
+                    <span class="text-left">Select a device</span>
                 </div>
               </div>
             </div>

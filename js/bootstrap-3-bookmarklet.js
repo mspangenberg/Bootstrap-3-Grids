@@ -1,11 +1,11 @@
 (function() {
-    var path = "https://raw.github.com/mspangenberg/Bootstrap-3-Grids/master/",
+    var path = "http://bootstrap-3-grids.dev/",
         containerEl = document.createElement("div"),
         frameEl = document.createElement("iframe"),
         styleEl = document.createElement("link");
  
     var sanitizePostMessage = function (e) {
-        if (e.origin === "https://raw.github.com/mspangenberg/Bootstrap-3-Grids/master/") {
+        if (e.origin === "http://bootstrap-3-grids.dev/") {
             return false;
         }
  
@@ -77,4 +77,5 @@
         render();
         attachEvents();
     }
+
 }());
