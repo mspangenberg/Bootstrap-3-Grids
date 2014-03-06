@@ -11,6 +11,51 @@ body {
   background-image: none;
 }
 
+/* Universal Classes
+================================================== */
+.no-style {
+  background-color: transparent;
+  border: none;
+}
+.no-padding {
+  padding: 0px;
+}
+.no-margin {
+  margin: 0px;
+}
+.color-purple {
+  color: #563d7c;
+}
+.bg-purple {
+  background-color: rgba(86,61,124,1);
+}
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover div {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+
+/* Device Detect (used with device-detect.js)
+================================================== */
+.hidden-android {
+    display: none;
+}
+
+.hidden-ios {
+    display: none;
+}
+
+.hidden-web {
+    display: none;
+}
+
+.visible-web {
+    display: block;
+}
+
 /* Bootstrap Classes
 ================================================== */
  .full-height {
@@ -64,20 +109,14 @@ hr {
 .full:hover {
   text-decoration: none;
 }
-
-/* Universal Classes
-================================================== */
-.no-style {
-  background-color: transparent;
-  border: none;
+.btn:focus {
+  outline: none;
+  outline-offset: 0;
 }
-.no-padding {
-  padding: 0px;
+.navbar-default {
+background-color: rgba(86,61,124,.15);
+border: 1px solid rgba(86,61,124,.2);
 }
-.no-margin {
-  margin: 0px;
-}
-
 /* Styles
 ================================================== */
 #grid-overlay {
@@ -87,11 +126,11 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
-
 #toolbar-overlay {
+  display: none;
   position: absolute;
   left: 0;
   bottom: 103px;
@@ -99,24 +138,20 @@ hr {
   z-index: 0;
   background-color: rgba(86,61,124,1);
 }
-
 #contextual-info {
   color: white;
-}
-
-/* Footer
-================================================== */
-.device-info {
-  text-align: center;
-  line-height: 40px;
 }
 #device-info-row {
   margin-bottom: 0px;
 }
-
+.device-info {
+  text-align: center;
+  line-height: 40px;
+}
 .device-info-border {
   display: inline-block;
   width: 100%;
+  min-height: 72px;
   padding: 15px;
   margin-bottom: 0;
   font-size: 14px;
@@ -131,27 +166,61 @@ hr {
   background-color: #ffffff;
   border-color: #cccccc;
 }
-
 #show-hide-grid-on {
   cursor: pointer;
   color: #fff;
   background-color: #563d7c;
   border-color: #563d7c;
 }
-
-#show-hide-grid-off {
+.show-hide-grid-off {
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
 }
-
-#show-hide-grid-on {
-  cursor: pointer;
+.show-hide-grid-on {
   color: #fff;
   background-color: #563d7c;
   border-color: #563d7c;
 }
+.glyphicon-align-center {
+  color: #563d7c;
+  margin: auto 5px 0 -5px; 
+}
+#device-drop-arrow {
+  color: #563d7c;
+  height: 36px;
+  border-radius: 4px 4px 0 0;
+}
+#device-drop-text {
+  height: 37px;
+  border-radius: 0 0 4px 4px;
+  margin-left: 0px;
+  margin-top: -1px;
+}
+#device-drop-text:hover,
+#device-drop-text:active {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+  cursor: default;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.dropdown-menu {
+  left: auto;
+  right: 15px;
+  background-color: #f8f8f8;
+  border-radius: 4px 4px 0 0;
+  border-width: 1px 1px 0px 1px;
+  -webkit-box-shadow: none;
+ box-shadow: none;
+}
+.dropdown-menu li a {
+  cursor: pointer;
+}
 
+/* Media Queries
+================================================== */
 @media (max-width: 479px) {
   #toolbar-overlay .container {
     overflow: auto;
