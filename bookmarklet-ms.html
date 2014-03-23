@@ -8,10 +8,14 @@
     <meta name="author" content="Matthew Spangenberg">
     <link rel="shortcut icon" href="favicon.png">
 
-    <title>Grid Templates for Bootstrap 3 - Bookmarklet</title>
+    <title>Grid Templates for Bootstrap 3 with Medium Small - Bookmarklet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom medium small (ms-col-*) CSS extension for Bootstrap 3 -->
+    <!-- https://gist.github.com/andyl/6451936 -->
+    <link href="css/bootstrap-ms-extension.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/bookmarklet-toolbar.css" rel="stylesheet">
@@ -63,7 +67,18 @@
               </p>
               <p><i>*Use <b>ONLY 3-12</b> column widths adding to 12 columns.</i></p>
             </div>
-            <div class="hidden-xs">
+            <div class="visible-ms">
+              <h3>Medium Small - 480px to 767px</h3>
+              <hr>
+              <p class="lead">
+                <strong>Container Width:</strong> auto<br />
+                <strong>Column Width:</strong> auto<br />
+                <strong>Gutter:</strong> 30px (15px on each side)<br />
+                <strong>Class Prefix:</strong> col-ms-*
+              </p>
+              <p><i>*Use <b>ONLY 2-12</b> column widths adding to 12 columns.</i></p>
+            </div>
+            <div class="hidden-xs hidden-ms">
               <div class="visible-sm">
                 <h3>Small - 768px to 991px</h3>
                 <hr>
@@ -109,7 +124,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-1 hidden-xs pointer bg-purple" id="toolbar-overlay-close">
+          <div class="col-sm-1 hidden-xs hidden-ms pointer bg-purple" id="toolbar-overlay-close">
             <span class="glyphicon glyphicon-remove"></span>
           </div>
         </div>
@@ -119,21 +134,22 @@
     <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
       <div class="container">
         <div class="row" id="device-info-row">
-          <div class="col-xs-12 col-sm-6 no-style device-info pointer" id="current-grid">
+          <div class="col-xs-12 col-ms-7 col-sm-6 no-style device-info pointer" id="current-grid">
             <div class="device-info-border text-left">
               <span class="visible-xs"><span class="color-purple"><strong>Current Grid:</strong></span> Extra Small</span>
+              <span class="visible-ms"><span class="color-purple"><strong>Current Grid:</strong></span> Medium Small</span>
               <span class="visible-sm"><span class="color-purple"><strong>Current Grid:</strong></span> Small</span>
               <span class="visible-md"><span class="color-purple"><strong>Current Grid:</strong></span> Medium</span>
               <span class="visible-lg"><span class="color-purple"><strong>Current Grid:</strong></span> Large</span>
               <span class="color-purple"><strong>Width: </strong></span><span class="text-left" id="output-31"></span>px
             </div>
           </div>
-          <div class="hidden-xs col-sm-2 no-style device-info">
+          <div class="hidden-xs hidden-ms col-sm-2 no-style device-info">
             <button class="device-info-border text-left btn btn-default show-hide-grid-off" id="show-hide-grid">
               <span class="glyphicon glyphicon-align-center"></span> <span class="color-purple"><strong>Grids</strong></span>
             </button>
           </div>
-          <div class="hidden-xs btn-group dropup col-sm-4 no-style device-dropdown">
+          <div class="hidden-xs btn-group dropup col-ms-5 col-sm-4 no-style device-dropdown">
             <button type="button" class="btn btn-default dropdown-toggle full" data-toggle="dropdown" id="device-drop-arrow">
               <span class="caret"></span>
               <span class="sr-only">Toggle Dropdown</span>

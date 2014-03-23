@@ -1,5 +1,5 @@
 // http://mspangenberg.github.io/Bootstrap-3-Grids/
-// http://bootstrap-3-grids.dev/
+// http://bootstrap-3-grids.dev/"
 
 (function() {
     var path = "http://mspangenberg.github.io/Bootstrap-3-Grids/",
@@ -50,7 +50,7 @@
  
     var setFrameOptions = function () {
         frameEl.setAttribute("allowTransparency", true);
-        frameEl.setAttribute("src", path + "bookmarklet.html?r=" + Math.random());
+        frameEl.setAttribute("src", path + "bookmarklet-ms.html?r=" + Math.random());
     };
  
     var close = function () {
