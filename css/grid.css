@@ -84,7 +84,8 @@ hr {
 
 #jumbotron-home-container {
   margin-top: -260px;
-  padding: 100px 0 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: rgba(255,255,255,1);
   margin-bottom: 90px;
 }
@@ -112,7 +113,6 @@ hr {
 #homepage-author a {
   color: #cdbfe3;
 }
-
 
 .content-headline {
   margin-top: 0;
@@ -185,4 +185,66 @@ hr {
 
 #device-info-row {
   margin-bottom: 0px;
+}
+
+/* Extra Small devices (up to 479px) */
+@media (max-width: 479px) {
+
+  #homepage-headline {
+    font-size: 40px;
+  }
+
+  #homepage-biline {
+    font-size: 21px;
+  }
+
+  .content-headline {
+    font-size: 32px;
+  }
+
+  .home-p {
+    padding: 0px;
+  }
+
+}
+
+/* Medium Small devices (tablets, 480px and up) */
+@media (min-width: 480px) and (max-width: 767px) {
+
+  #homepage-headline {
+    font-size: 60px;
+  }
+
+  #homepage-biline {
+    font-size: 24px;
+  }
+
+  .content-headline {
+    font-size: 32px;
+  }
+
+  .home-p {
+    padding: 0px
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
+
 }
