@@ -135,7 +135,8 @@ hr {
   text-decoration: underline;
 }
 
-#img-devices {
+#img-devices,
+#img-example {
   margin: 0 auto;
 }
 
