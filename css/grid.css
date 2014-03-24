@@ -140,6 +140,10 @@ hr {
   margin: 0 auto;
 }
 
+#introduction-headline {
+  margin-top: 90px;
+}
+
 .get-started-headline {
   text-align: center;
 }
@@ -179,6 +183,10 @@ hr {
   margin-bottom: 0px;
 }
 
+.alert-row {
+  margin-bottom: 0px;
+}
+
 .device-info {
   text-align: center;
   line-height: 40px;
@@ -186,6 +194,10 @@ hr {
 
 #device-info-row {
   margin-bottom: 0px;
+}
+
+#footer a {
+  color: #563d7c;
 }
 
 /* Extra Small devices (up to 479px) */
@@ -207,6 +219,10 @@ hr {
     padding: 0px;
   }
 
+  #footer {
+    text-align: center;
+  }
+
 }
 
 /* Medium Small devices (tablets, 480px and up) */
@@ -226,6 +242,10 @@ hr {
 
   .home-p {
     padding: 0px
+  }
+
+  #footer {
+    text-align: center;
   }
 
 }

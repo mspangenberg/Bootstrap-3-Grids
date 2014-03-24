@@ -70,7 +70,7 @@
       <p><i>*Width values specified</i></p>
       <hr>
       <h4>iOS Devices</h4>
-      <hr>
+      <br />
       <div class="table-responsive">
         <table class="line-items table table-bordered table-striped">
           <thead class="panel-heading">
@@ -156,8 +156,7 @@
 
       <hr>
       <h4>Android Devices</h4>
-      <hr>
-
+      <br />
       <div class="table-responsive">
         <table class="line-items table table-bordered table-striped">
           <thead class="panel-heading">
@@ -239,9 +238,20 @@
               <th>600px</th>
               <th>2</th>
               <th>1200x1920</th>
-              <th>*Medium Small</th>
+              <th>Extra Small</th>
               <th><a href="#" class="btn-sm btn-primary text-center full" onclick="window.open('universal.html','newWin','width=600,height=960')">open window</a></th>
             </tr>
+
+            <!-- Need to determine how to represent custom Medium Small Grid
+            <tr>
+              <th>Nexus 7 2013 (P)</th>
+              <th>600px</th>
+              <th>2</th>
+              <th>1200x1920</th>
+              <th>*Medium Small</th>
+              <th><a href="#" class="btn-sm btn-primary text-center full" onclick="window.open('universal-ms.html','newWin','width=600,height=960')">open window</a></th>
+            </tr>
+            -->
 
             <tr>
               <th>Nexus 10 (P)</th>
@@ -265,22 +275,37 @@
           <tfoot>
           </tfoot>
         </table>
+        <!-- Need to determine how to represent custom Medium Small Grid
         <p class"pull-right"><i>
           *Page must be using the custom <a target="_blank" href="css/bootstrap-ms-extension.css">Medium Small Grid CSS</a>. An explaination about the use and need for a Medium Small Grid can be found <a target="_blank" href="https://github.com/twbs/bootstrap/issues/10203">here</a>.
         </i></p>
-      </div>      
-      <hr>      
+      -->
+      </div>         
+    </div> <!-- /container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 no-style">
+          <hr>
+          <p class="text-right" id="footer">
+            <a href="http://mattspangenberg.com" target="_blank">Matthew Spangenberg</a>
+           | <a href="https://github.com/mspangenberg/Bootstrap-3-Grids" target="_blank">Fork Me On GitHub</a>
+           | <a href="https://twitter.com/MattSpangenberg">Tweet Me</a></p>
+        </div>
+      </div>
     </div> <!-- /container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Detect iOS and Android for Hidden and Visible Classes -->
     <script src="js/device-detect.js"></script>
+
+    <!-- GA Page Load Event -->
+    <script type="text/javascript">_gaq.push(['_trackEvent', 'Bootstrap 3 Grids', 'Page Load', 'Devices Page Load']);</script>
 
   </body>
 </html>
