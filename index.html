@@ -71,8 +71,32 @@
     </div>
 
     <div class="container" id="jumbotron-home-container">
+
       <div class="row">
-        <h2 class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-8 col-sm-offset-2 no-style content-headline" id="introduction-headline">An Introduction</h2>
+        <h2 class="col-xs-12 col-ms-12 col-sm-12 no-style text-center content-headline">Getting Started</h2>
+        <div class="row">
+          <div class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-8 col-sm-offset-2 no-style">
+            <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
+              <h3 class="get-started-headline">Learn The Grids.</h3>
+              <p class="get-started-text text-center">Resize your window to see how the grids scale.</p>
+              <a href="universal.html" class="btn-lg btn-primary text-center full get-started-btn">Grids</a>
+            </div>
+            <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
+              <h3 class="get-started-headline">Preview Devices.</h3>
+              <p class="get-started-text text-center">Open preset new windows of popular devices.</p>
+              <a href="devices.html" class="btn-lg btn-primary text-center full get-started-btn">Devices</a>
+            </div>
+            <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
+              <h3 class="get-started-headline">The Bookmarklet.</h3>
+              <p class="get-started-text text-center">Overlay the Bootstrap 3 grids while coding a page.</p>
+              <a href="downloads.html" class="btn-lg btn-primary text-center full get-started-btn">Downloads</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h2 class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-8 col-sm-offset-2 no-style content-headline text-center" id="introduction-headline">An Introduction</h2>
       </div>
       <div class="row home-p">
         <p class="col-xs-12 col-ms-8 col-ms-offset-2 col-sm-8 col-sm-offset-2 no-style">
@@ -108,30 +132,12 @@
 
     <div class="container">
       <div class="row">
-        <h2 class="col-xs-12 col-ms-12 col-sm-8 col-sm-offset-2 no-style text-center content-headline">Getting Started</h2>
-        <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
-          <h3 class="get-started-headline">Learn The Grids.</h3>
-          <p class="get-started-text text-center">Resize your window to see how the grids scale.</p>
-          <a href="universal.html" class="btn-lg btn-primary text-center full get-started-btn">Grids</a>
-        </div>
-        <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
-          <h3 class="get-started-headline">Preview Devices.</h3>
-          <p class="get-started-text text-center">Open preset new windows of popular devices.</p>
-          <a href="devices.html" class="btn-lg btn-primary text-center full get-started-btn">Devices</a>
-        </div>
-        <div class="col-xs-12 col-ms-12 col-sm-4 no-style">
-          <h3 class="get-started-headline">The Bookmarklet.</h3>
-          <p class="get-started-text text-center">Overlay the Bootstrap 3 grids while coding a page.</p>
-          <a href="downloads.html" class="btn-lg btn-primary text-center full get-started-btn">Downloads</a>
-        </div>
-      </div>
-    </div> <!-- /container -->
-
-    <div class="container">
-      <div class="row">
         <div class="col-xs-12 no-style">
           <hr>
-          <p class="text-right">Matthew Spangenberg | <a href="https://github.com/mspangenberg/Bootstrap-3-Grids" target="_blank">Fork Me On GitHub</a></p>
+          <p class="text-right" id="footer">
+            <a href="http://mattspangenberg.com" target="_blank">Matthew Spangenberg</a>
+           | <a href="https://github.com/mspangenberg/Bootstrap-3-Grids" target="_blank">Fork Me On GitHub</a>
+           | <a href="https://twitter.com/MattSpangenberg">Tweet Me</a></p>
         </div>
       </div>
     </div> <!-- /container -->
@@ -139,12 +145,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Detect iOS and Android for Hidden and Visible Classes -->
     <script src="js/device-detect.js"></script>
+
+    <!-- GA Page Load Event -->
+    <script type="text/javascript">_gaq.push(['_trackEvent', 'Bootstrap 3 Grids', 'Page Load', 'Homepage Page Load']);</script>
 
   </body>
 </html>
