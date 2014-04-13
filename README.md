@@ -34,8 +34,7 @@ At this point, the developer side in me was sold on Bootstrap, but raised the qu
 
 To me, Bootstrap addresses a team's need to rethink how they create a single experience using a mutual language that can be understood by designers and developers alike. I have created this site as a resource for teams to come together and have all the resources needed to understand how to use Bootstrap as an efficient tool. Explore the site! In the end, a framework in general is a great starting point to get the communication going to work more efficiently. It is a joint decision! 
 
-##Author
-========
+## Author
 
 Matthew spangenberg
 [Website](https://mattSpangenberg.com)
@@ -43,4 +42,10 @@ Matthew spangenberg
 [LinkedIn](www.linkedin.com/in/mattspangenberg)
 [Email](mailto:me@mattspangenberg.com)
 
+## Contributors
 
+Chris Abrams
+[Website](http://chrisabrams.com)
+[Twitter](https://twitter.com/_chrisabrams_)
+[LinkedIn](www.linkedin.com/in/cabrams)
+[Email](mailto:mail@chrisabrams.com)
