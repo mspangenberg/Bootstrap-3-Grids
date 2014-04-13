@@ -115,8 +115,8 @@
             <div id="device-info-row">
               <div class="no-style">
                 <p class="lead">
-                  <strong>Density Pixel Ratio: </strong><span id="output-dppx">?</span><br />
-                  <strong>Device Resolution: </strong><span id="device"></span>
+                  <strong>Density Pixel Ratio: </strong><span id="output-dppx"></span><br />
+                  <strong>Device Resolution: </strong><span id="output-res"></span>
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@
               <span class="visible-sm"><span class="color-purple"><strong>Current Grid:</strong></span> Small</span>
               <span class="visible-md"><span class="color-purple"><strong>Current Grid:</strong></span> Medium</span>
               <span class="visible-lg"><span class="color-purple"><strong>Current Grid:</strong></span> Large</span>
-              <span class="color-purple"><strong>Width: </strong></span><span class="text-left" id="output-31"></span>px
+              <span class="color-purple"><strong>Width: </strong></span><span class="text-left" id="output-px"></span>px
             </div>
           </div>
           <div class="hidden-xs col-sm-2 no-style device-info">
@@ -189,20 +189,11 @@
     });
     </script>
 
-    <!-- Determine Device Pixels -->
-    <!--<script src="js/ender.min.js"></script>-->
-    <script src="js/verge.min.js"></script>
+    <!-- Determine Device Info -->
     <script src="js/scripts.js"></script>
 
     <!-- Get Current URL -->
     <script src="js/get-url.js"></script>
-
-    <!-- Determine Device Pixels -->
-    <script>
-    var scale = window.devicePixelRatio;
-    var text = screen.width * scale + "";
-      $("#device").html(text);
-    </script>
 
     <!-- GA Page Load Event -->
     <script type="text/javascript">_gaq.push(['_trackEvent', 'Bootstrap 3 Grids', 'Page Load', 'Bookmarklet Default Page Load']);</script>
