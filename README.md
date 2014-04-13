@@ -36,8 +36,8 @@ To me, Bootstrap addresses a team's need to rethink how they create a single exp
 
 ## Author
 
-Matthew spangenberg
-[Website](https://mattSpangenberg.com)
+Matthew Spangenberg
+[Website](https://mattspangenberg.com)
 [Twitter](https://twitter.com/MattSpangenberg)
 [LinkedIn](www.linkedin.com/in/mattspangenberg)
 [Email](mailto:me@mattspangenberg.com)
