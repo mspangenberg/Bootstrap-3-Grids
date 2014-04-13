@@ -275,15 +275,15 @@
         <div class="row" id="device-info-row">
 
           <div class="col-xs-4 no-style device-info">
-            <b>px: </b><span id="output-31"></span>
+            <b>px: </b><span id="output-px"></span>
           </div>
 
           <div class="col-xs-4 no-style device-info">
-            <b>dppx: </b><span id="output-dppx">?</span>
+            <b>dppx: </b><span id="output-dppx"></span>
           </div>
 
           <div class="col-xs-4 no-style device-info">
-            <b>res: </b><span id="device"></span>
+            <b>res: </b><span id="output-res"></span>
           </div>
 
         </div>
@@ -299,17 +299,8 @@
     <!-- Detect iOS and Android for Hidden and Visible Classes -->
     <script src="js/device-detect.js"></script>
 
-    <!-- Determine Device Pixels -->
-    <script src="js/verge.min.js"></script>
-    <script src="js/ender.min.js"></script>
+    <!-- Determine Device Info -->
     <script src="js/scripts.js"></script>
-
-    <!-- Determine Device Pixels -->
-    <script>
-    var scale = window.devicePixelRatio;
-    var text = screen.width * scale + "";
-      $("#device").html(text);
-    </script>
 
     <!-- GA Page Load Event -->
     <script type="text/javascript">_gaq.push(['_trackEvent', 'Bootstrap 3 Grids', 'Page Load', 'Grids MS Page Load']);</script>
