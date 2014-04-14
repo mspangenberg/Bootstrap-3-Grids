@@ -81,14 +81,14 @@ $(document).ready(function() {
 
   var devices = {
 
-    iphone: {
-      height: 320,
-      width: 480
+    'iphone': {
+      height: 480,
+      width: 320
     },
 
-    iphone5: {
-      height: 320,
-      width: 568
+    'iphone5': {
+      height: 568,
+      width: 320
     },
 
     'ipad-p': {
@@ -101,9 +101,9 @@ $(document).ready(function() {
       width: 1024
     },
 
-    nexus5: {
+    'nexus5': {
       height: 640,
-      width: 320
+      width: 360
     },
 
     'nexus7-p': {

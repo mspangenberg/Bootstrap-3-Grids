@@ -1,15 +1,12 @@
 #Bootstrap 3 Grids
-==================
 
 Bootstrap 3 grids, devices, and downloads for designers and developers. 
 
 ##Website
-=========
 
 http://mspangenberg.github.io/Bootstrap-3-Grids/
 
 ##Bootstrap 3 Downloads
-=======================
 
 **Default Bootstrap Downloads**
 1. Bootstrap 3 Bookmarklet
@@ -24,7 +21,6 @@ http://mspangenberg.github.io/Bootstrap-3-Grids/
 3. Custom Bootstrap 3 Design Assets
 
 ##About
-=======
 
 As the world of devices and resolutions continue to vastly expand, it is becoming increasingly difficult to translate design into code quickly and efficiently. How can a designer start with a fixed document size in Photoshop when the medium of web is unbound by a fixed width? On the other end of the spectrum, how can a front-end developer accurately assemble a universal layout when it is created with an optimal single space in mind by a designer?
 
@@ -37,15 +33,15 @@ To me, Bootstrap addresses a team's need to rethink how they create a single exp
 ## Author
 
 Matthew Spangenberg
-[Website](https://mattspangenberg.com)
-[Twitter](https://twitter.com/MattSpangenberg)
-[LinkedIn](www.linkedin.com/in/mattspangenberg)
-[Email](mailto:me@mattspangenberg.com)
+- [Website](https://mattspangenberg.com/?utm_source=github&utm_medium=readme&utm_campaign=bootstrap-3-github)
+- [Twitter](https://twitter.com/MattSpangenberg)
+- [LinkedIn](www.linkedin.com/in/mattspangenberg)
+- [Email](mailto:me@mattspangenberg.com)
 
 ## Contributors
 
 Chris Abrams
-[Website](http://chrisabrams.com)
-[Twitter](https://twitter.com/_chrisabrams_)
-[LinkedIn](www.linkedin.com/in/cabrams)
-[Email](mailto:mail@chrisabrams.com)
+- [Website](http://chrisabrams.com/?utm_source=github&utm_medium=readme&utm_campaign=bootstrap-3-github)
+- [Twitter](https://twitter.com/_chrisabrams_)
+- [LinkedIn](www.linkedin.com/in/cabrams)
+- [Email](mailto:mail@chrisabrams.com)
