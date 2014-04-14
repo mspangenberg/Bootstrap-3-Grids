@@ -2,7 +2,7 @@
 // http://bootstrap-3-grids.dev/
 
 (function() {
-    var path = "http://bootstrap-3-grids.dev/",
+    var path = "http://mspangenberg.github.io/Bootstrap-3-Grids/",
         containerEl = document.createElement("div"),
         frameEl = document.createElement("iframe"),
         styleEl = document.createElement("link");
