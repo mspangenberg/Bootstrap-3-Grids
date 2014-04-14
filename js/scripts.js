@@ -17,20 +17,18 @@ return {Object.window.width} Number
 
 function onResize ($window) {
 
-  var dpr          = (window.devicePixelRatio || 1),
-      windowHeight = $window.height(),
-      windowWidth  = $window.width()
+  var dpr = (window.devicePixelRatio || 1);
 
   return {
     
     pixelRatio: dpr,
-    resolution: {
-      height: windowHeight * dpr,
-      width: windowWidth * dpr
+    screen: {
+      height: window.screen.height,
+      width: window.screen.width
     },
     window: {
-      height: windowHeight,
-      width: windowWidth
+      height: $window.height(),
+      width: $window.width()
     }
 
   }
@@ -43,7 +41,7 @@ return {Void}
 function updateText (size) {
   $('#output-px').text(size.window.width)
   $('#output-dppx').text(size.pixelRatio)
-  $('#output-res').text(size.resolution.width)
+  $('#output-res').text(size.screen.width)
 }
 
 /*** What we want
