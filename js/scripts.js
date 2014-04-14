@@ -17,7 +17,7 @@ return {Object.window.width} Number
 
 function onResize ($window) {
 
-  var dpr          = (window.devicePixelRatio || 1);
+  var dpr = (window.devicePixelRatio || 1);
 
   return {
     
