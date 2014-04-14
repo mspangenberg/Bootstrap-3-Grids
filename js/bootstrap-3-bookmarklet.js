@@ -6,7 +6,8 @@
         containerEl = document.createElement("div"),
         frameEl = document.createElement("iframe"),
         styleEl = document.createElement("link");
- 
+    
+    /*
     var sanitizePostMessage = function (e) {
         if (e.origin === "http://mspangenberg.github.io/Bootstrap-3-Grids/") {
             return false;
@@ -18,6 +19,13 @@
  
         return false;
     };
+    */
+
+    var generateScript = function(source) {
+        var script = document.createElement('script')
+        script.setAttribute("type","text/javascript")
+        script.setAttribute("src", source)
+    }
  
     var generateStyle = function () {
         styleEl.setAttribute("type", "text/css");
@@ -35,7 +43,8 @@
         document.body.appendChild(containerEl);
         containerEl.appendChild(frameEl);
     };
- 
+    
+    /*
     var attachEvents = function () {
         window.addEventListener("message", function (event) {
             var message = sanitizePostMessage(event);
@@ -47,6 +56,7 @@
             }
         });
     };
+    */
  
     var setFrameOptions = function () {
         frameEl.setAttribute("allowTransparency", true);
@@ -75,10 +85,11 @@
  
     if (document.getElementById("bookmarklet-container") === null) {
         generateStyle();
+        //generateScript(path + 'js/scripts.js');
         setElementClasses();
         setFrameOptions();
         render();
-        attachEvents();
+        //attachEvents();
     }
 
 }());

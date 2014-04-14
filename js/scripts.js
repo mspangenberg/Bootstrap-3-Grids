@@ -68,7 +68,9 @@ return {Void}
 */
 
 $(document).ready(function() {
-  var origin  = top.window.location.origin,
+
+  //var origin  = top.window.location.origin, - No worky, CORS
+  var origin  = document.referrer,
       $window = $(window)
 
   $window.resize(function() {
@@ -77,58 +79,61 @@ $(document).ready(function() {
 
   determineSizeAndUpdateText($window);
 
-  $('#dropup-iphone').on('click', function(e) {
+  var devices = {
+
+    iphone: {
+      height: 320,
+      width: 480
+    },
+
+    iphone5: {
+      height: 320,
+      width: 568
+    },
+
+    'ipad-p': {
+      height: 1024,
+      width: 768
+    },
+
+    'ipad-l': {
+      height: 768,
+      width: 1024
+    },
+
+    nexus5: {
+      height: 640,
+      width: 320
+    },
+
+    'nexus7-p': {
+      height: 960,
+      width: 600
+    },
+
+    'nexus7-l': {
+      height: 600,
+      width: 960
+    },
+
+    'nexus10-p': {
+      height: 1280,
+      width: 800
+    },
+
+    'nexus10-l': {
+      height: 800,
+      width: 1280
+    }
+
+  }
+
+  $('.open-new-window').on('click', function(e) {
     e.preventDefault()
 
-    windowOpenWithRes(origin, {height: 320, width: 480})
-  });
+    var device = e.target.id.split(/-(.+)?/)[1];
 
-  $('#dropup-iphone5').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 320, width: 568})
-  });
-
-  $('#dropup-ipad-p').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 1024, width: 768})
-  });
-
-  $('#dropup-ipad-l').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 768, width: 1024})
-  });
-
-  $('#dropup-nexus5').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 640, width: 320})
-  });
-
-  $('#dropup-nexus7-p').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 960, width: 600})
-  });
-
-  $('#dropup-nexus7-l').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 600, width: 960})
-  });
-
-  $('#dropup-nexus10-p').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 1280, width: 800})
-  });
-
-  $('#dropup-nexus10-l').on('click', function(e) {
-    e.preventDefault()
-
-    windowOpenWithRes(origin, {height: 800, width: 1280})
+    windowOpenWithRes(origin, {height: devices[device].height, width: devices[device].width})
   });
 
 });
