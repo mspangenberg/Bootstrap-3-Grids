@@ -1,26 +1,15 @@
 // ----- Detect iOS and Android for Hidden and Visible Classes -----
 // ----- Used with device-detect.css -----
 
-var isAndroid = function() {
-    if (window.navigator.userAgent.match('Android')) {
-        return true;
-    } else {
-        return false;
-    }
-};
+$(function() {
+    var isAndroid = function() {
+        return window.navigator.userAgent.match('Android');
+    };
 
-var isiOS = function() {
-    if (window.navigator.userAgent.match('iPad|iPhone|iPod')) {
-        return true;
-    } else {
-        return false;
-    }
-};
+    var isiOS = function() {
+        return window.navigator.userAgent.match('iPad|iPhone|iPod');
+    };
 
-var downloadlink;
-
-$(document).ready(function() {
-      
     if (isAndroid()) {
         $(".hidden-android").css("display", "none");
         $(".visible-android").css("display", "block");
@@ -28,5 +17,4 @@ $(document).ready(function() {
         $(".hidden-ios").css("display", "none");
         $(".visible-ios").css("display", "block");
     }
-
 });
